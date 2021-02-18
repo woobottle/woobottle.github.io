@@ -4,7 +4,6 @@
   "description": "Documentation, built with mdx",
   "author": "Praveen <praveen@hasura.io> (@praveenweb)",
   "version": "0.0.1",
-  "deploy": "gatsby build && gh-pages -d public -b master",
   "dependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.7.4",
     "@emotion/core": "^10.0.22",
@@ -59,10 +58,11 @@
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths",
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
-    "lint": "eslint --fix \"src/**/*.{js,jsx}\""
+    "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
+    "babel-eslint": "^10.1.0", 
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
