@@ -7,6 +7,7 @@ import mdxComponents from './mdxComponents';
 import Sidebar from './sidebar';
 import RightSidebar from './rightSidebar';
 import config from '../../config.js';
+import Utterances from './utterances'
 
 const Wrapper = styled('div')`
   display: flex;
@@ -76,7 +77,10 @@ const Layout = ({ children, location }) => (
           />
         ) : null}
         <Content>
-          <MaxWidth>{children}</MaxWidth>
+          <MaxWidth>
+            {children}
+            <Utterances />
+          </MaxWidth>
         </Content>
         <RightSideBarWidth className={'hiddenMobile'}>
           <RightSidebar location={location} />
