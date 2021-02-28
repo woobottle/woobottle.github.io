@@ -52,7 +52,7 @@ const Utterances = () => {
 		script.async = true;
 		script.setAttribute('repo', 'woobottle/blog-comments');
 		script.setAttribute('issue-term', 'pathname');
-		script.setAttribute('label', 'comment :speech_balloon:');
+    script.setAttribute('theme', 'github-light');
 		script.setAttribute('crossorigin', 'anonymous');
 
 		const scriptParentNode = document.getElementById(commentNodeId);
