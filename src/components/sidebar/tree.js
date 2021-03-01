@@ -121,10 +121,14 @@ const Tree = ({ edges }) => {
   });
 
   const defaultCollapsed = {};
-
+  
   treeData.items.forEach(item => {
     if (config.sidebar.collapsedNav && config.sidebar.collapsedNav.includes(item.url)) {
       defaultCollapsed[item.url] = true;
+      if (item.items.length !== 0) { // Assume page has children that should be collapsed
+      item.items.forEach(child => {
+        defaultCollapsed[child.url] = true;
+      })}
     } else {
       defaultCollapsed[item.url] = false;
     }

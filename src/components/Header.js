@@ -76,13 +76,13 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       }
     `}
     render={data => {
-      const logoImg = require('./images/logo.svg');
+      const logoImg = 'https://img.icons8.com/ios/50/000000/sport-bottle.png';
 
       const twitter = require('./images/twitter.svg');
 
-      const discordBrandsBlock = require('./images/discord-brands-block.svg');
+      // const discordBrandsBlock = require('./images/discord-brands-block.svg');
 
-      const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
+      // const twitterBrandsBlock = require('./images/twitter-brands-block.svg');
 
       const {
         site: {
@@ -90,19 +90,19 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         },
       } = data;
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/';
+      const finalLogoLink = logo.link !== '' ? logo.link : 'https://woobottle.github.io';
 
       return (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
             <div className={'navBarHeader'}>
-              <Link to={finalLogoLink} className={'navBarBrand'}>
+              {/* <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
                   src={logo.image !== '' ? logo.image : logoImg}
                   alt={'logo'}
                 />
-              </Link>
+              </Link> */}
               <div
                 className={'headerTitle displayInline'}
                 dangerouslySetInnerHTML={{ __html: headerTitle }}

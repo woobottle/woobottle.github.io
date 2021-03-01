@@ -1,32 +1,20 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
-    gaTrackingId: null,
+    siteUrl: 'https://woobottle.github.io',
+    gaTrackingId: 'UA-164616831-1',
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
+    logo: 'https://img.icons8.com/ios/50/000000/sport-bottle.png',
+    logoLink: 'https://woobottle.github.io',
+    logoImage: 'https://img.icons8.com/ios/50/000000/sport-bottle.png',
     title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+      "이것저것 개발 블로그",
+    githubUrl: 'https://github.com/woobottle',
     helpUrl: '',
     tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Twitter'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+    social: ``,
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
@@ -39,20 +27,24 @@ const config = {
   sidebar: {
     forcedNavOrder: [
       '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/books',
+      '/algorithm',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      '/books', // add trailing slash if enabled above
+      '/algorithm',
+      '/algorithm/baekjoon',
+      '/algorithm/list',
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    links: [{ text: '', link: '' }],
     frontline: false,
     ignoreIndex: true,
     title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+      "",
   },
   siteMetadata: {
     title: 'woobottle',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    description: '개발블로그',
     ogImage: null,
     docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
     favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
