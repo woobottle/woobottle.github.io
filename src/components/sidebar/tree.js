@@ -69,6 +69,7 @@ const calculateTreeData = edges => {
 
   const tmp = [...forcedNavOrder];
 
+  // eslint-disable-next-line no-empty
   if (config.gatsby && config.gatsby.trailingSlash) {
   }
   tmp.reverse();
